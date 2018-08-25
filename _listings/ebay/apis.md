@@ -13,9 +13,20 @@ modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/aspects/master/_listings/ebay/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Ebay
-  x-api-slug: ebay
-  description: the-ebay-platform-offers-an-unprecedented-opportunity-to-build-a-new-ebay-business-or-expand-your-current-business-reach-new-customers-and-create-a-potential-new-stream-of-revenue--leverage-the-resources-of-the-ebay-developers-program-to-tap-into-the-ebay-marketplace-with-millions-of-active-users-globally-with-tools-and-services-that-meet-the-diverse-needs-of-buyers-and-sellers-
+- name: Ebay - Get Category Tree Category Tree  Get Item Aspects For Category
+  x-api-slug: category-treecategory-tree-idget-item-aspects-for-category-get
+  description: 'This call returns a list of aspects that are appropriate or necessary
+    for accurately describing items in the specified leaf category. Each aspect identifies
+    an item attribute (for example, color) for which the seller will be required or
+    encouraged to provide a value (or variation values) when offering an item in that
+    category on eBay. For each aspect, getItemAspectsForCategory provides complete
+    metadata, including: The aspect''s data type, format, and entry mode Whether the
+    aspect is required in listings Whether the aspect can be used for item variations
+    Whether the aspect accepts multiple values for an item Allowed values for the
+    aspectUse this information to construct an interface through which sellers can
+    enter or select the appropriate values for their items or item variations. Once
+    you collect those values, include them as product aspects when creating inventory
+    items using the Inventory API.'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/138-ebay.jpg
   humanURL: https://ebay.com
   baseURL: https://api.ebay.com//
@@ -27,18 +38,6 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/aspects/master/_listings/ebay/category-treecategory-tree-idget-item-aspects-for-category-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/aspects/master/_listings/ebay/category-treecategory-tree-idget-item-aspects-for-category-get-openapi.md
-- name: Ebay
-  x-api-slug: ebay
-  description: Buy and sell electronics, cars, fashion apparel, collectibles, sporting
-    goods, digital cameras, baby items, coupons, and everything else on eBay, the
-    worlds online marketplace
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/138-ebay.jpg
-  humanURL: https://ebay.com
-  baseURL: https://api.ebay.com//
-  tags: Aspects
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/aspects/master/_listings/ebay/openapi.md
 x-common:
 - type: x-api-gallery
   url: http://easycron.api.gallery.streamdata.io
